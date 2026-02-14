@@ -34,7 +34,7 @@
 
         <div class="overflow-auto " style="height: calc(90vh - 180px)">
 
-            @can('Voir e-souscription')
+            {{-- @can('Voir e-souscription') --}}
             <strong><li class="menu-label">E-Souscription</li></strong>
             <li>
                 <a href="javascript(void(0))" data-bs-toggle="modal" data-bs-target="#dowloadBullModal" >
@@ -59,9 +59,9 @@
                     <div class="menu-title">Mes Propositions</div>
                 </a>
             </li>
-            @endcan
+            {{-- @endcan --}}
             {{-- module de gestion de prospection --}}
-            @can('Voir e-prospection')
+            {{-- @can('Voir e-prospection') --}}
             <strong><li class="menu-label">E-Prospection</li></strong>
             <li>
                 <a href="{{ route('prospect.index')}}">
@@ -71,7 +71,7 @@
                     <div class="menu-title">Nouvelle prospection</div>
                 </a>
             </li>
-            @endcan
+            {{-- @endcan --}}
 
             
 
