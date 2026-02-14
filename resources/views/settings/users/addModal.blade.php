@@ -62,7 +62,7 @@
                             <div class="row">
                                 <div class="mb-3 col-sm-12 col-md-6">
                                     <label for="codereseau" class="form-label">Réseau de commercialisation</label>
-                                    <input type="text" name="codereseau" id="codereseau" class="form-control" value="ASSFIN" readonly>
+                                    <input type="text"  name="codereseau" id="codereseau" class="form-control" value="{{$reseaux->id ?? ''}}" placeholder="{{ $reseaux->libelle ?? ''}}" readonly>
                                 </div>
                                 <div class="mb-3 col-sm-12 col-md-6">
                                     <label for="codezone" class="form-label">Zone/Departement</label>
