@@ -86,6 +86,8 @@ class UserController extends Controller
     public function store(Request $request)
     {
 
+    Log::info("Request data: " . json_encode($request->all()));
+
 
         // $id = Membre::max('idmembre') + 2;
         $id = now()->format('mdHis');
@@ -121,7 +123,7 @@ class UserController extends Controller
                 'profession' => $request->profession,
                 'agence' => $request->codeequipe,  // equipe es une aagence // code
                 'branche' => $request->branche,
-                'nomagence' => $request->nomagence,
+                // 'nomagence' => $request->nomagence,
                 'login' => $request->login,
                 'role' => $request->profile,
                 'coderole' => $request->profile_id,
