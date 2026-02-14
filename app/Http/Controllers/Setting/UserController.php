@@ -86,7 +86,7 @@ class UserController extends Controller
     public function store(Request $request)
     {
 
-    Log::info("Request data: " . json_encode($request->all()));
+        Log::info("Request data: " . json_encode($request->all()));
 
 
         // $id = Membre::max('idmembre') + 2;
@@ -327,18 +327,18 @@ class UserController extends Controller
 
         try {
             $membre = Membre::where('idmembre', $id)->update([
-                'codereseau' => $request->codereseau,
+                // 'codereseau' => 12,
                 'codezone' => $request->codezone,
-                'codeequipe' => $request->codeequipe,
+                // 'codeequipe' => $request->codeequipe,
                 'sexe' => $request->sexe,
                 'nom' => $request->nom,
                 'prenom' => $request->prenom,
                 'datenaissance' => $request->datenaissance,
                 'profession' => $request->profession,
-                'agence' => $request->codeequipe,
+                // 'agence' => $request->codeequipe,
                 'branche' => $request->branche,
                 'login' => $request->login,
-                'role' => $request->profile,
+                // 'role' => $request->profile,
                 'coderole' => $request->role_id, // ou profile_id selon cohérence
                 'email' => $request->email,
                 'cel' => $request->cel,
