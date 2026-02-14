@@ -35,7 +35,7 @@
             <div class="table-responsive">
                 @php
                     // Colonnes par défaut
-                    $defaultColumns = ['#', 'Nom complet', 'Email', 'Code', 'Type'];
+                    $defaultColumns = ['#', 'Nom complet', 'Email', 'Agence', 'Code', 'Type'];
 
                     $additionalColumns = [
                         'Session ID' => 'id_session',
@@ -119,6 +119,7 @@
                             <td>{{ $loop->iteration }}</td>
                             <td>{{ $item->nom ?? "" }} {{ $item->prenom ?? "" }}</td>
                             <td>{{ $item->email ?? "" }}</td>
+                            <td>{{ $item->agence ?? "" }}</td>
                             <td>{{ $item->codeagent ?? "" }}</td>
                             <td>{{ $item->typ_membre ?? "" }}</td>
 
