@@ -43,50 +43,50 @@
                         </p>	
                     </div>
                     @if ($product->CodeProduit == 'YKE_2018')
-                        @can('Demarrer une souscription')
+                        {{-- @can('Demarrer une souscription') --}}
                         <div class="card-footer text-center">
                             {{-- <a href="{{ route('prod.createYke', $product->CodeProduit) }}" class="btn-prime btn-prime-two d-block">Souscrire</a> --}}
                             <a href="javascript(void(0))" data-bs-toggle="modal" data-bs-target="#gestionnairePRopositionModalYKE_2018" class="btn-prime btn-prime-two d-block">Souscrire</a>
 
                         </div>
-                        @else
+                        {{-- @else
                         <div class="card-footer text-center">
                             <a href="#" class="btn-prime btn-prime-two d-block text-danger">Vous n'etes pas autorisé</a>
                         </div>
-                        @endcan
+                        @endcan --}}
                     @elseif ($product->CodeProduit == 'CADENCE')
-                        @can('Demarrer une souscription')
+                        {{-- @can('Demarrer une souscription') --}}
                         <div class="card-footer text-center">
                             {{-- <a href="{{ route('prod.createKds', $product->CodeProduit) }}" class="btn-prime btn-prime-two d-block">Souscrire</a> --}}
                             <a href="javascript(void(0))" data-bs-toggle="modal" data-bs-target="#gestionnairePRopositionModal{{$product->CodeProduit}}" class="btn-prime btn-prime-two d-block">Souscrire</a>
                         </div>
-                        @else
+                        {{-- @else
                         <div class="card-footer text-center">
                             <a href="#" class="btn-prime btn-prime-two d-block text-danger">Vous n'etes pas autorisé</a>
                         </div>
-                        @endcan
+                        @endcan --}}
                     @elseif ($product->CodeProduit == 'CAD_EDUCPLUS')
-                        @can('Demarrer une souscription')
+                        {{-- @can('Demarrer une souscription') --}}
                         <div class="card-footer text-center">
                             {{-- <a href="{{ route('prod.createCAD', $product->CodeProduit) }}" class="btn-prime btn-prime-two d-block">Souscrire</a> --}}
                             <a href="javascript(void(0))" data-bs-toggle="modal" data-bs-target="#gestionnairePRopositionModalCAD_EDUCPLUS" class="btn-prime btn-prime-two d-block">Souscrire</a>
                         </div>
-                        @else
+                        {{-- @else
                         <div class="card-footer text-center">
                             <a href="#" class="btn-prime btn-prime-two d-block text-danger">Vous n'etes pas autorisé</a>
                         </div>
-                        @endcan
+                        @endcan --}}
                     @elseif ($product->CodeProduit == 'DOIHOO')
-                        @can('Demarrer une souscription')
+                        {{-- @can('Demarrer une souscription') --}}
                         <div class="card-footer text-center">
                             {{-- <a href="{{ route('prod.createdoihoo', $product->CodeProduit) }}" class="btn-prime btn-prime-two d-block">Souscrire</a> --}}
                             <a href="javascript(void(0))" data-bs-toggle="modal" data-bs-target="#gestionnairePRopositionModalDOIHOO" class="btn-prime btn-prime-two d-block">Souscrire</a>
                         </div>
-                        @else
+                        {{-- @else
                         <div class="card-footer text-center">
                             <a href="#" class="btn-prime btn-prime-two d-block text-danger">Vous n'etes pas autorisé</a>
                         </div>
-                        @endcan
+                        @endcan --}}
                     @else
                         @can('Demarrer une souscription')
                         <div class="card-footer text-center">
